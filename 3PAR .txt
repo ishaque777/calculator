@@ -1,0 +1,378 @@
+DR3PAR20800 cli%
+DR3PAR20800 cli%
+DR3PAR20800 cli%
+DR3PAR20800 cli%
+DR3PAR20800 cli% upgradesys -liststaged
+OS-3.3.2.159-P20
+DR3PAR20800 cli%
+DR3PAR20800 cli%
+DR3PAR20800 cli% Upgradesys -load OS-3.3.2.159-P20
+invalid command name "Upgradesys"
+DR3PAR20800 cli% upgradesys -load OS-3.3.2.159-P20
+Verifying upgrade kit and attempting installation if valid...
+Extracting...
+Applying new package...
+Checking dual boot version.
+Performing pre-update checks...
+Checking state of volumes of internal disks.
+Distributing package to all nodes...
+Running preupdate scripts...
+Retaining prior root partition.
+Installing software...
+During netc update, expect the network connection to hang for a minute or more.
+Restarting tocsvr.
+Restarting sysmgr.
+Restarting quorum witness (qw).
+Restarting tpdtcl.
+Restarting adlc auth_helper cachesvr check_slow_disk cimserver compr_gc darsvr diskscrub em_filter enclmgmt fedmgr fipsvr hahelper ldrgsampler nemoed netc netcc nodesvr pdscrub pr_svr scheduler scsid snmpagent srsampler vmmgr wsapi .
+Done with restarts.
+Internal system disk of node 0 updated successfully.
+Internal system disk of node 1 updated successfully.
+Internal system disk of node 2 updated successfully.
+Internal system disk of node 3 updated successfully.
+Update complete.
+Update successful.
+DR3PAR20800 cli% showversion -a -b
+Release version 3.3.2.159 (MU1)
+Patches:  P08,P10,P15,P20
+
+Component Name                   Version
+CLI Server                       3.3.2.168 (P10)
+CLI Client                       3.3.2.159
+System Manager                   3.3.2.172 (P15)
+Kernel                           3.3.2.159 (MU1)
+TPD Kernel Code                  3.3.2.168 (P10)
+CIM Server                       3.3.2.168 (P10)
+WSAPI Server                     3.3.2.178 (P20)
+Console Menu                     3.3.2.159 (MU1)
+Event Manager                    3.3.2.168 (P10)
+Internal Test Tools              3.3.2.159 (MU1)
+LD Check Tools                   3.3.2.159 (MU1)
+Network Controller               3.3.2.159 (MU1)
+Node Disk Scrubber               3.3.2.159 (MU1)
+PD Scrubber                      3.3.2.159 (MU1)
+Per-Node Server                  3.3.2.168 (P10)
+Persistent Repository            3.3.2.159 (MU1)
+Powerfail Tools                  3.3.2.159 (MU1)
+Preserved Data Tools             3.3.2.159 (MU1)
+Process Monitor                  3.3.2.159 (MU1)
+Software Updater                 3.3.2.168 (P10)
+TOC Server                       3.3.2.168 (P10)
+VV Check Tools                   3.3.2.159 (MU1)
+Upgrade Tool                     241211.U070
+File Persona                     1.6.101.1-20201118 (MU1)
+SNMP Agent                       1.14.0
+SSH                              7.9p1-10+deb10u4
+VASA Provider                    3.1.9.5 (P10)
+Legacy FW Database               3.3.2.172 (P15)
+Legacy Drive FW                  3.3.2.159 (MU1)
+Emulex Drive FW                  3.3.2.159 (MU1)
+Legacy HGST Drive FW             3.3.2.159 (MU1)
+Samsung FIPS Drive FW            3.3.2.172 (P15)
+Samsung nonFIPS FW               3.3.2.172 (P15)
+Seagate FIPS Drive FW            3.3.2.159 (MU1)
+Seagate nonFIPS FW               3.3.2.159 (MU1)
+WDC FIPS 10K Drive FW            3.3.2.159 (MU1)
+WDC FIPS 15K Drive FW            3.3.2.159 (MU1)
+WDC FIPS SSD FW                  3.3.2.159 (MU1)
+WDC nonFIPS 10K FW               3.3.2.159 (MU1)
+WDC nonFIPS 15K FW               3.3.2.159 (MU1)
+WDC nonFIPS 7.2K FW              3.3.2.159 (MU1)
+WDC nonFIPS SSD FW               3.3.2.159 (MU1)
+Intel SCM FW                     3.3.2.159 (MU1)
+UEFI BIOS                        05.05.09 (MU1)
+MCU Firmware (OKI)               4.9.20 (MU1)
+MCU Firmware (STM)               5.5.00 (MU1)
+Cage Firmware (DC1)              4.44 (MU1)
+Cage Firmware (DC2)              2.64 (MU1)
+Cage Firmware (DC3)              08 (MU1)
+Cage Firmware (DC4)              2.64 (MU1)
+Cage Firmware (DCN1)             409b (MU1)
+Cage Firmware (DCN2)             409b (MU1)
+Cage Firmware (DCS1)             409b (MU1)
+Cage Firmware (DCS2)             409b (MU1)
+Cage Firmware (DCS5)             3.07 (MU1)
+Cage Firmware (DCS6)             3.07 (MU1)
+Cage Firmware (DCS7)             409b (MU1)
+Cage Firmware (DCS8)             409b (MU1)
+QLogic QLA4052C HBA Firmware     03.00.01.77 (MU1)
+QLogic QLE8242 CNA Firmware      04.15.27
+QLogic 260x HBA FC Firmware      174.03.70
+QLogic 27xx/268x HBA FC Firmware 174.03.70
+QLogic 83xx HBA FCoE Firmware    08.01.05
+QLogic 8300 HBA iSCSI Firmware   05.07.51
+Emulex LP11002 HBA Firmware      02.82.x10
+Emulex LPe12002 HBA Firmware     02.10.x08
+Emulex LPe12004 HBA Firmware     02.10.x08
+Emulex LPe16002 HBA Firmware     11.4.415.0
+Emulex LPe16004 HBA Firmware     11.4.415.0
+3PAR FC044X HBA Firmware         200A8
+LSI 9201-16e HBA Firmware        20.00.13
+LSI 9205-8e HBA Firmware         20.00.13
+LSI 9300-8e HBA Firmware         16.00.10 (P10)
+DR3PAR20800 cli%
+DR3PAR20800 cli%
+DR3PAR20800 cli% checkhealth ld
+Checking ld
+Component -----Summary Description----- Qty
+LD        LDs with reduced availability   8
+-------------------------------------------
+        1 total                           8
+
+DR3PAR20800 cli% showpd -failed -degraded
+                               ----Size(MiB)----- ----Ports----
+ Id CagePos  Type RPM State        Total     Free A      B      Capacity(GB)
+ 12 18:14:0  SSD  100 degraded   7323648   337920 1:1:3* 0:1:3*         7680
+ 13 18:15:0  SSD  100 degraded   7323648   325632 1:1:3* 0:1:3*         7680
+ 47 0:22:0   SSD  100 degraded   7323648   337920 1:2:1* 0:2:1*         7680
+ 48 7:14:0   SSD  100 degraded   7323648   337920 1:1:3* 0:1:3*         7680
+ 49 7:15:0   SSD  100 degraded   7323648   321536 1:1:3* 0:1:3*         7680
+ 84 4:14:0   SSD  100 degraded   7323648   269312 1:2:3* 0:2:3*         7680
+ 85 4:15:0   SSD  100 degraded   7323648   264192 1:2:3* 0:2:3*         7680
+ 86 5:14:0   SSD  100 degraded   7323648   269312 1:2:3* 0:2:3*         7680
+ 87 5:15:0   SSD  100 degraded   7323648   265216 1:2:3* 0:2:3*         7680
+161 7:18:0   SSD  100 degraded   3660800   146432 1:1:3* 0:1:3*         3840
+222 7:19:0   SSD  100 degraded   3660800   149504 1:1:3* 0:1:3*         3840
+302 12:18:0  SSD  100 degraded   3660800   147456 3:2:3* 2:2:3*         3840
+303 12:19:0  SSD  100 degraded   3660800   145408 3:2:3* 2:2:3*         3840
+304 0:18:0   SSD  100 degraded   7323648   180224 1:2:1* 0:2:1*         7680
+305 0:19:0   SSD  100 degraded   7323648   180224 1:2:1* 0:2:1*         7680
+306 0:20:0   SSD  100 degraded   7323648   180224 1:2:1* 0:2:1*         7680
+307 0:21:0   SSD  100 degraded   7323648   179200 1:2:1* 0:2:1*         7680
+308 1:18:0   SSD  100 degraded   7323648   232448 1:2:1* 0:2:1*         7680
+309 1:19:0   SSD  100 degraded   7323648   215040 1:2:1* 0:2:1*         7680
+310 1:20:0   SSD  100 degraded   7323648   233472 1:2:1* 0:2:1*         7680
+311 1:21:0   SSD  100 degraded   7323648   215040 1:2:1* 0:2:1*         7680
+312 2:18:0   SSD  100 degraded   7323648   180224 1:1:1* 0:1:1*         7680
+313 2:19:0   SSD  100 degraded   7323648   178176 1:1:1* 0:1:1*         7680
+314 2:20:0   SSD  100 degraded   7323648   180224 1:1:1* 0:1:1*         7680
+315 2:21:0   SSD  100 degraded   7323648   179200 1:1:1* 0:1:1*         7680
+316 3:18:0   SSD  100 degraded   7323648   232448 1:1:1* 0:1:1*         7680
+317 3:19:0   SSD  100 degraded   7323648   216064 1:1:1* 0:1:1*         7680
+318 3:20:0   SSD  100 degraded   7323648   233472 1:1:1* 0:1:1*         7680
+319 3:21:0   SSD  100 degraded   7323648   215040 1:1:1* 0:1:1*         7680
+320 8:18:0   SSD  100 degraded   7323648   257024 3:1:1* 2:1:1*         7680
+321 8:19:0   SSD  100 degraded   7323648   242688 3:1:1* 2:1:1*         7680
+322 8:20:0   SSD  100 degraded   7323648   249856 3:1:1* 2:1:1*         7680
+323 8:21:0   SSD  100 degraded   7323648   246784 3:1:1* 2:1:1*         7680
+324 9:18:0   SSD  100 degraded   7323648   246784 3:1:1* 2:1:1*         7680
+325 9:19:0   SSD  100 degraded   7323648   242688 3:1:1* 2:1:1*         7680
+326 9:20:0   SSD  100 degraded   7323648   257024 3:1:1* 2:1:1*         7680
+327 9:21:0   SSD  100 degraded   7323648   249856 3:1:1* 2:1:1*         7680
+328 10:18:0  SSD  100 degraded   7323648   257024 3:2:1* 2:2:1*         7680
+329 10:19:0  SSD  100 degraded   7323648   243712 3:2:1* 2:2:1*         7680
+330 10:20:0  SSD  100 degraded   7323648   249856 3:2:1* 2:2:1*         7680
+331 10:21:0  SSD  100 degraded   7323648   245760 3:2:1* 2:2:1*         7680
+332 11:18:0  SSD  100 degraded   7323648   258048 3:2:1* 2:2:1*         7680
+333 11:19:0  SSD  100 degraded   7323648   241664 3:2:1* 2:2:1*         7680
+334 11:20:0  SSD  100 degraded   7323648   247808 3:2:1* 2:2:1*         7680
+335 11:21:0  SSD  100 degraded   7323648   250880 3:2:1* 2:2:1*         7680
+336 4:20:0   SSD  100 degraded   7323648   163840 1:2:3* 0:2:3*         7680
+337 4:21:0   SSD  100 degraded   7323648   179200 1:2:3* 0:2:3*         7680
+338 5:20:0   SSD  100 degraded   7323648   163840 1:2:3* 0:2:3*         7680
+339 5:21:0   SSD  100 degraded   7323648   179200 1:2:3* 0:2:3*         7680
+340 18:20:0  SSD  100 degraded   7323648   179200 1:1:3* 0:1:3*         7680
+341 18:21:0  SSD  100 degraded   7323648   179200 1:1:3* 0:1:3*         7680
+342 7:20:0   SSD  100 degraded   7323648   180224 1:1:3* 0:1:3*         7680
+343 7:21:0   SSD  100 degraded   7323648   179200 1:1:3* 0:1:3*         7680
+344 12:20:0  SSD  100 degraded   7323648   266240 3:2:3* 2:2:3*         7680
+345 12:21:0  SSD  100 degraded   7323648   263168 3:2:3* 2:2:3*         7680
+346 13:20:0  SSD  100 degraded   7323648   180224 3:2:3* 2:2:3*         7680
+347 13:21:0  SSD  100 degraded   7323648   261120 3:2:3* 2:2:3*         7680
+349 14:21:0  SSD  100 degraded   7323648   261120 3:1:3* 2:1:3*         7680
+350 15:20:0  SSD  100 degraded   7323648   175104 3:1:3* 2:1:3*         7680
+351 15:21:0  SSD  100 degraded   7323648   261120 3:1:3* 2:1:3*         7680
+353 14:12:0  SSD  100 degraded   7323648   244736 3:1:3* 2:1:3*         7680
+354 1:22:0   SSD  100 degraded   7323648   231424 1:2:1* 0:2:1*         7680
+355 1:23:0   SSD  100 degraded   7323648   214016 1:2:1* 0:2:1*         7680
+356 2:22:0   SSD  100 degraded   7323648   337920 1:1:1* 0:1:1*         7680
+357 2:23:0   SSD  100 degraded   7323648   325632 1:1:1* 0:1:1*         7680
+358 3:22:0   SSD  100 degraded   7323648   231424 1:1:1* 0:1:1*         7680
+359 3:23:0   SSD  100 degraded   7323648   215040 1:1:1* 0:1:1*         7680
+360 4:22:0   SSD  100 degraded   7323648   264192 1:2:3* 0:2:3*         7680
+361 4:23:0   SSD  100 degraded   7323648   325632 1:2:3* 0:2:3*         7680
+362 5:22:0   SSD  100 degraded   7323648   265216 1:2:3* 0:2:3*         7680
+363 5:23:0   SSD  100 degraded   7323648   325632 1:2:3* 0:2:3*         7680
+364 18:22:0  SSD  100 degraded   7323648   180224 1:1:3* 0:1:3*         7680
+365 18:23:0  SSD  100 degraded   7323648   177152 1:1:3* 0:1:3*         7680
+366 7:22:0   SSD  100 degraded   7323648   180224 1:1:3* 0:1:3*         7680
+367 7:23:0   SSD  100 degraded   7323648   178176 1:1:3* 0:1:3*         7680
+368 8:22:0   SSD  100 degraded   7323648   244736 3:1:1* 2:1:1*         7680
+369 10:22:0  SSD  100 degraded   7323648   244736 3:2:1* 2:2:1*         7680
+370 10:23:0  SSD  100 degraded   7323648   195584 3:2:1* 2:2:1*         7680
+371 11:22:0  SSD  100 degraded   7323648   244736 3:2:1* 2:2:1*         7680
+372 11:23:0  SSD  100 degraded   7323648   193536 3:2:1* 2:2:1*         7680
+373 8:23:0   SSD  100 degraded   7323648   194560 3:1:1* 2:1:1*         7680
+374 9:22:0   SSD  100 degraded   7323648   246784 3:1:1* 2:1:1*         7680
+375 9:23:0   SSD  100 degraded   7323648   193536 3:1:1* 2:1:1*         7680
+376 12:22:0  SSD  100 degraded   7323648   241664 3:2:3* 2:2:3*         7680
+377 12:23:0  SSD  100 degraded   7323648   233472 3:2:3* 2:2:3*         7680
+378 13:22:0  SSD  100 degraded   7323648   160768 3:2:3* 2:2:3*         7680
+379 13:23:0  SSD  100 degraded   7323648   233472 3:2:3* 2:2:3*         7680
+380 14:22:0  SSD  100 degraded   7323648   242688 3:1:3* 2:1:3*         7680
+381 14:23:0  SSD  100 degraded   7323648   234496 3:1:3* 2:1:3*         7680
+382 15:22:0  SSD  100 degraded   7323648   162816 3:1:3* 2:1:3*         7680
+383 15:23:0  SSD  100 degraded   7323648   234496 3:1:3* 2:1:3*         7680
+392 13:14:0  SSD  100 degraded   7323648   410624 3:2:3* 2:2:3*         7680
+393 13:15:0  SSD  100 degraded   7323648   217088 3:2:3* 2:2:3*         7680
+394 15:14:0  SSD  100 degraded   7323648   413696 3:1:3* 2:1:3*         7680
+395 15:15:0  SSD  100 degraded   7323648   217088 3:1:3* 2:1:3*         7680
+396 12:12:0  SSD  100 degraded   7323648   242688 3:2:3* 2:2:3*         7680
+397 12:13:0  SSD  100 degraded   7323648   193536 3:2:3* 2:2:3*         7680
+399 14:13:0  SSD  100 degraded   7323648   194560 3:1:3* 2:1:3*         7680
+400 0:23:0   SSD  100 degraded   7323648   325632 1:2:1* 0:2:1*         7680
+----------------------------------------------------------------------------
+ 99 total                      710389760 23021568
+DR3PAR20800 cli%
+DR3PAR20800 cli% admithw -checkonly
+Checking nodes...
+Checking volumes...
+Checking system LDs...
+After an upgrade from 2.2.4 or earlier, if sufficient space is present
+admithw will automatically remove and recreate the preserved data LDs
+with a larger set size to improve their availability
+Checking ports...
+Checking SAS HBA firmware...
+Checking 32 SAS Port(s) for firmware upgrades
+Checking state of disks...
+Checking for drive table upgrade packages
+99 disk(s) require firmware upgrade, this step can take an extended period of time based on load
+Checking cabling...
+Checking cage firmware...
+Checking system health...
+Checking alert
+Checking ao
+Checking cabling
+Checking cage
+Checking cert
+Checking dar
+Checking date
+Checking file
+Checking fs
+Checking host
+Checking hostkeys
+Checking ld
+Checking license
+Checking network
+Checking node
+Checking pd
+Checking pdch
+Checking port
+Checking qos
+Checking rc
+Checking snmp
+Checking task
+Checking vlun
+Checking vv
+Checking sp
+The following issues must be resolved before proceeding with the update:
+Port:1:4:2 - Port not configured as host like Port:0:4:2
+Port:0:4:1 - Port not configured as host like Port:1:4:1
+Resolution for the above issues:
+Ensure that the specified port is configured identically to its Peer Port. The CLI "showport" will display port information. The port characteristics may be modified using "controlport".
+
+admithw has completed
+DR3PAR20800 cli% showpd -i -failed -degraded
+ Id CagePos  State    ----Node_WWN---- --MFR-- -----Model------ -Serial- -FW_Rev- Protocol MediaType -----AdmissionTime-----
+ 12 18:14:0  degraded 5002538B119DA401 SAMSUNG ARFA7680S5xnNTRI 0R900995 3P00     SAS      MLC       2022-01-26 00:08:59 IST
+ 13 18:15:0  degraded 5002538B119DA3D1 SAMSUNG ARFA7680S5xnNTRI 0R900992 3P00     SAS      MLC       2022-01-26 00:08:59 IST
+ 47 0:22:0   degraded 5002538B119DA821 SAMSUNG ARFA7680S5xnNTRI 0R901046 3P00     SAS      MLC       2022-01-08 01:24:59 IST
+ 48 7:14:0   degraded 5002538B119DA541 SAMSUNG ARFA7680S5xnNTRI 0R901010 3P00     SAS      MLC       2022-01-26 00:08:59 IST
+ 49 7:15:0   degraded 5002538B119DA461 SAMSUNG ARFA7680S5xnNTRI 0R901001 3P00     SAS      MLC       2022-01-26 00:08:59 IST
+ 84 4:14:0   degraded 5002538B119DA351 SAMSUNG ARFA7680S5xnNTRI 0R900984 3P00     SAS      MLC       2022-01-26 00:08:59 IST
+ 85 4:15:0   degraded 5002538B119DA311 SAMSUNG ARFA7680S5xnNTRI 0R900980 3P00     SAS      MLC       2022-01-26 00:08:59 IST
+ 86 5:14:0   degraded 5002538B119DA4C1 SAMSUNG ARFA7680S5xnNTRI 0R901007 3P00     SAS      MLC       2022-01-26 00:08:59 IST
+ 87 5:15:0   degraded 5002538B119DA411 SAMSUNG ARFA7680S5xnNTRI 0R900996 3P00     SAS      MLC       2022-01-26 00:08:59 IST
+161 7:18:0   degraded 5002538B4992FE21 SAMSUNG ARFX3840S5xnNTRI 0M905393 3P01     SAS      MLC       2019-11-12 12:04:00 IST
+222 7:19:0   degraded 5002538B4992DB81 SAMSUNG ARFX3840S5xnNTRI 0M904839 3P01     SAS      MLC       2019-11-12 12:04:00 IST
+302 12:18:0  degraded 5002538B4992DE21 SAMSUNG ARFX3840S5xnNTRI 0M904881 3P01     SAS      MLC       2019-11-12 12:04:00 IST
+303 12:19:0  degraded 5002538B4992E081 SAMSUNG ARFX3840S5xnNTRI 0M904919 3P01     SAS      MLC       2019-11-12 12:04:00 IST
+304 0:18:0   degraded 5002538B499256B1 SAMSUNG ARFX7680S5xnNTRI 0M901000 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+305 0:19:0   degraded 5002538B4990F971 SAMSUNG ARFX7680S5xnNTRI 0M900722 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+306 0:20:0   degraded 5002538B49925771 SAMSUNG ARFX7680S5xnNTRI 0M901012 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+307 0:21:0   degraded 5002538B49925311 SAMSUNG ARFX7680S5xnNTRI 0M900942 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+308 1:18:0   degraded 5002538B4990F571 SAMSUNG ARFX7680S5xnNTRI 0M900658 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+309 1:19:0   degraded 5002538B49925731 SAMSUNG ARFX7680S5xnNTRI 0M901008 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+310 1:20:0   degraded 5002538B49925721 SAMSUNG ARFX7680S5xnNTRI 0M901007 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+311 1:21:0   degraded 5002538B499252F1 SAMSUNG ARFX7680S5xnNTRI 0M900940 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+312 2:18:0   degraded 5002538B99714B71 SAMSUNG ARFX7680S5xnNTRI 0M702851 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+313 2:19:0   degraded 5002538B49925761 SAMSUNG ARFX7680S5xnNTRI 0M901011 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+314 2:20:0   degraded 5002538B997144C1 SAMSUNG ARFX7680S5xnNTRI 0M702744 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+315 2:21:0   degraded 5002538B4990F391 SAMSUNG ARFX7680S5xnNTRI 0M900628 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+316 3:18:0   degraded 5002538B99717FB1 SAMSUNG ARFX7680S5xnNTRI 0M703152 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+317 3:19:0   degraded 5002538B99714491 SAMSUNG ARFX7680S5xnNTRI 0M702741 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+318 3:20:0   degraded 5002538B49925441 SAMSUNG ARFX7680S5xnNTRI 0M900961 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+319 3:21:0   degraded 5002538B49925601 SAMSUNG ARFX7680S5xnNTRI 0M900989 3P01     SAS      MLC       2019-11-12 12:20:02 IST
+320 8:18:0   degraded 5002538B4990D871 SAMSUNG ARFX7680S5xnNTRI 0M900194 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+321 8:19:0   degraded 5002538B49925621 SAMSUNG ARFX7680S5xnNTRI 0M900991 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+322 8:20:0   degraded 5002538B997144F1 SAMSUNG ARFX7680S5xnNTRI 0M702747 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+323 8:21:0   degraded 5002538B99717DD1 SAMSUNG ARFX7680S5xnNTRI 0M703122 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+324 9:18:0   degraded 5002538B99717F91 SAMSUNG ARFX7680S5xnNTRI 0M703150 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+325 9:19:0   degraded 5002538B4990F581 SAMSUNG ARFX7680S5xnNTRI 0M900659 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+326 9:20:0   degraded 5002538B99717F01 SAMSUNG ARFX7680S5xnNTRI 0M703141 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+327 9:21:0   degraded 5002538B4990FA91 SAMSUNG ARFX7680S5xnNTRI 0M900740 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+328 10:18:0  degraded 5002538B4990D8A1 SAMSUNG ARFX7680S5xnNTRI 0M900197 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+329 10:19:0  degraded 5002538B49925381 SAMSUNG ARFX7680S5xnNTRI 0M900949 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+330 10:20:0  degraded 5002538B4990F981 SAMSUNG ARFX7680S5xnNTRI 0M900723 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+331 10:21:0  degraded 5002538B499253F1 SAMSUNG ARFX7680S5xnNTRI 0M900956 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+332 11:18:0  degraded 5002538B99718A01 SAMSUNG ARFX7680S5xnNTRI 0M703317 3P01     SAS      MLC       2019-11-12 12:38:02 IST
+333 11:19:0  degraded 5002538B99714381 SAMSUNG ARFX7680S5xnNTRI 0M702724 3P01     SAS      MLC       2019-11-12 12:38:03 IST
+334 11:20:0  degraded 5002538B499256C1 SAMSUNG ARFX7680S5xnNTRI 0M901001 3P01     SAS      MLC       2019-11-12 12:38:03 IST
+335 11:21:0  degraded 5002538B99717F81 SAMSUNG ARFX7680S5xnNTRI 0M703149 3P01     SAS      MLC       2019-11-12 12:38:03 IST
+336 4:20:0   degraded 5002538B49925751 SAMSUNG ARFX7680S5xnNTRI 0M901010 3P01     SAS      MLC       2019-11-12 12:50:00 IST
+337 4:21:0   degraded 5002538B4990D841 SAMSUNG ARFX7680S5xnNTRI 0M900191 3P01     SAS      MLC       2019-11-12 12:50:00 IST
+338 5:20:0   degraded 5002538B4990FA81 SAMSUNG ARFX7680S5xnNTRI 0M900739 3P01     SAS      MLC       2019-11-12 12:50:00 IST
+339 5:21:0   degraded 5002538B99714AB1 SAMSUNG ARFX7680S5xnNTRI 0M702839 3P01     SAS      MLC       2019-11-12 12:50:00 IST
+340 18:20:0  degraded 5002538B49925371 SAMSUNG ARFX7680S5xnNTRI 0M900948 3P01     SAS      MLC       2019-11-12 12:50:00 IST
+341 18:21:0  degraded 5002538B4990F6C1 SAMSUNG ARFX7680S5xnNTRI 0M900679 3P01     SAS      MLC       2019-11-12 12:50:00 IST
+342 7:20:0   degraded 5002538B4990F051 SAMSUNG ARFX7680S5xnNTRI 0M900576 3P01     SAS      MLC       2019-11-12 12:50:00 IST
+343 7:21:0   degraded 5002538B4990F3B1 SAMSUNG ARFX7680S5xnNTRI 0M900630 3P01     SAS      MLC       2019-11-12 12:50:01 IST
+344 12:20:0  degraded 5002538B49925691 SAMSUNG ARFX7680S5xnNTRI 0M900998 3P01     SAS      MLC       2019-11-12 12:54:00 IST
+345 12:21:0  degraded 5002538B4990D851 SAMSUNG ARFX7680S5xnNTRI 0M900192 3P01     SAS      MLC       2019-11-12 12:54:00 IST
+346 13:20:0  degraded 5002538B499256A1 SAMSUNG ARFX7680S5xnNTRI 0M900999 3P01     SAS      MLC       2019-11-12 12:54:00 IST
+347 13:21:0  degraded 5002538B4990F841 SAMSUNG ARFX7680S5xnNTRI 0M900703 3P01     SAS      MLC       2019-11-12 13:00:00 IST
+349 14:21:0  degraded 5002538B99717DB1 SAMSUNG ARFX7680S5xnNTRI 0M703120 3P01     SAS      MLC       2019-11-12 13:00:00 IST
+350 15:20:0  degraded 5002538B49925461 SAMSUNG ARFX7680S5xnNTRI 0M900963 3P01     SAS      MLC       2019-11-12 13:00:00 IST
+351 15:21:0  degraded 5002538B4990F3A1 SAMSUNG ARFX7680S5xnNTRI 0M900629 3P01     SAS      MLC       2019-11-12 13:00:00 IST
+353 14:12:0  degraded 5002538B0323C6A1 SAMSUNG ARFA7680S5xnNTRI 0W200144 3P00     SAS      MLC       2023-05-01 23:13:30 IST
+354 1:22:0   degraded 5002538B119DA6C1 SAMSUNG ARFA7680S5xnNTRI 0R901029 3P00     SAS      MLC       2022-01-08 01:24:59 IST
+355 1:23:0   degraded 5002538B119DA8B1 SAMSUNG ARFA7680S5xnNTRI 0R901050 3P00     SAS      MLC       2022-01-08 01:25:00 IST
+356 2:22:0   degraded 5002538B119DAB11 SAMSUNG ARFA7680S5xnNTRI 0R901068 3P00     SAS      MLC       2022-01-08 01:25:00 IST
+357 2:23:0   degraded 5002538B119DA831 SAMSUNG ARFA7680S5xnNTRI 0R901047 3P00     SAS      MLC       2022-01-08 01:25:00 IST
+358 3:22:0   degraded 5002538B119DAA91 SAMSUNG ARFA7680S5xnNTRI 0R901065 3P00     SAS      MLC       2022-01-08 01:25:00 IST
+359 3:23:0   degraded 5002538B119DA951 SAMSUNG ARFA7680S5xnNTRI 0R901055 3P00     SAS      MLC       2022-01-08 01:25:00 IST
+360 4:22:0   degraded 5002538B119DA891 SAMSUNG ARFA7680S5xnNTRI 0R901048 3P00     SAS      MLC       2022-01-08 01:25:00 IST
+361 4:23:0   degraded 5002538B119DAA81 SAMSUNG ARFA7680S5xnNTRI 0R901064 3P00     SAS      MLC       2022-01-08 01:25:00 IST
+362 5:22:0   degraded 5002538B119DAAA1 SAMSUNG ARFA7680S5xnNTRI 0R901066 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+363 5:23:0   degraded 5002538B119DA7D1 SAMSUNG ARFA7680S5xnNTRI 0R901041 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+364 18:22:0  degraded 5002538B119DAA71 SAMSUNG ARFA7680S5xnNTRI 0R901063 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+365 18:23:0  degraded 5002538B119DAB31 SAMSUNG ARFA7680S5xnNTRI 0R901070 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+366 7:22:0   degraded 5002538B119DA7B1 SAMSUNG ARFA7680S5xnNTRI 0R901039 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+367 7:23:0   degraded 5002538B119DA8A1 SAMSUNG ARFA7680S5xnNTRI 0R901049 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+368 8:22:0   degraded 5002538B119DA941 SAMSUNG ARFA7680S5xnNTRI 0R901054 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+369 10:22:0  degraded 5002538B119DA7C1 SAMSUNG ARFA7680S5xnNTRI 0R901040 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+370 10:23:0  degraded 5002538B119DA7A1 SAMSUNG ARFA7680S5xnNTRI 0R901038 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+371 11:22:0  degraded 5002538B119DA971 SAMSUNG ARFA7680S5xnNTRI 0R901057 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+372 11:23:0  degraded 5002538B119DA9D1 SAMSUNG ARFA7680S5xnNTRI 0R901058 3P00     SAS      MLC       2022-01-08 01:31:00 IST
+373 8:23:0   degraded 5002538B119DAAB1 SAMSUNG ARFA7680S5xnNTRI 0R901067 3P00     SAS      MLC       2022-01-08 01:36:59 IST
+374 9:22:0   degraded 5002538B119DA8D1 SAMSUNG ARFA7680S5xnNTRI 0R901052 3P00     SAS      MLC       2022-01-08 01:36:59 IST
+375 9:23:0   degraded 5002538B119DA6B1 SAMSUNG ARFA7680S5xnNTRI 0R901028 3P00     SAS      MLC       2022-01-08 01:36:59 IST
+376 12:22:0  degraded 5002538B119DA421 SAMSUNG ARFA7680S5xnNTRI 0R900997 3P00     SAS      MLC       2022-01-08 01:36:59 IST
+377 12:23:0  degraded 5002538B119DA3E1 SAMSUNG ARFA7680S5xnNTRI 0R900993 3P00     SAS      MLC       2022-01-08 01:36:59 IST
+378 13:22:0  degraded 5002538B119DA7F1 SAMSUNG ARFA7680S5xnNTRI 0R901043 3P00     SAS      MLC       2022-01-08 01:36:59 IST
+379 13:23:0  degraded 5002538B119D9611 SAMSUNG ARFA7680S5xnNTRI 0R900842 3P00     SAS      MLC       2022-01-08 01:36:59 IST
+380 14:22:0  degraded 5002538B119DA491 SAMSUNG ARFA7680S5xnNTRI 0R901004 3P00     SAS      MLC       2022-01-08 01:36:59 IST
+381 14:23:0  degraded 5002538B119DA3B1 SAMSUNG ARFA7680S5xnNTRI 0R900990 3P00     SAS      MLC       2022-01-08 01:37:00 IST
+382 15:22:0  degraded 5002538B119DA2F1 SAMSUNG ARFA7680S5xnNTRI 0R900978 3P00     SAS      MLC       2022-01-08 01:37:00 IST
+383 15:23:0  degraded 5002538B119DA301 SAMSUNG ARFA7680S5xnNTRI 0R900979 3P00     SAS      MLC       2022-01-08 01:37:00 IST
+392 13:14:0  degraded 5002538B119DA451 SAMSUNG ARFA7680S5xnNTRI 0R901000 3P00     SAS      MLC       2022-02-12 00:19:00 IST
+393 13:15:0  degraded 5002538B119DA7E1 SAMSUNG ARFA7680S5xnNTRI 0R901042 3P00     SAS      MLC       2022-02-12 00:19:00 IST
+394 15:14:0  degraded 5002538B119DA3F1 SAMSUNG ARFA7680S5xnNTRI 0R900994 3P00     SAS      MLC       2022-02-12 00:19:00 IST
+395 15:15:0  degraded 5002538B119DA801 SAMSUNG ARFA7680S5xnNTRI 0R901044 3P00     SAS      MLC       2022-02-12 00:19:00 IST
+396 12:12:0  degraded 5002538B119D9E71 SAMSUNG ARFA7680S5xnNTRI 0R900931 3P00     SAS      MLC       2022-02-02 23:25:00 IST
+397 12:13:0  degraded 5002538B119DA471 SAMSUNG ARFA7680S5xnNTRI 0R901002 3P00     SAS      MLC       2022-02-02 23:25:00 IST
+399 14:13:0  degraded 5002538B119DA321 SAMSUNG ARFA7680S5xnNTRI 0R900981 3P00     SAS      MLC       2022-02-02 23:25:00 IST
+400 0:23:0   degraded 5002538B1236DF11 SAMSUNG ARFA7680S5xnNTRI 0T300087 3P00     SAS      MLC       2023-01-25 21:39:25 IST
+----------------------------------------------------------------------------------------------------------------------------
+ 99 total
+DR3PAR20800 cli%
